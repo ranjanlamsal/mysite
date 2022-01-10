@@ -57,7 +57,7 @@
             <p>It's quick and easy</p>
         </div>
         <br><br>
-        <form action="./thanks" method="get">
+        <form action="./thanks" method="post"> {% csrf_token %}
             <div>
                 <nav>
                     <input type="text" name="firstname" id="firstname" minlength="2" maxlength="20" required placeholder="First name">
